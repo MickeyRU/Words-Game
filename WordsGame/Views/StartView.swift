@@ -40,7 +40,11 @@ struct StartView: View {
             
         }.background(Image("background"))
             .fullScreenCover(isPresented: $IsShowedGame, content: {
-                GameView()
+                
+                let player1 = Player(name: self.playerOne)
+                let player2 = Player(name: self.playerTwo)
+                
+                GameView(viewModel: GameViewModel(playerOne: player1, playerTwo: player2, word: self.bigWord))
             })
     }
 }

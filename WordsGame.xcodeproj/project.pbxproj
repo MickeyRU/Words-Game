@@ -14,6 +14,8 @@
 		BECD2EF62AEFC89B00C5BBD9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EF52AEFC89B00C5BBD9 /* TitleText.swift */; };
 		BECD2EF82AEFC98C00C5BBD9 /* WordsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EF72AEFC98C00C5BBD9 /* WordsTextField.swift */; };
 		BECD2EFA2AEFCC4100C5BBD9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EF92AEFCC4100C5BBD9 /* GameView.swift */; };
+		BECD2EFD2AEFDF1D00C5BBD9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EFC2AEFDF1D00C5BBD9 /* Player.swift */; };
+		BECD2F002AEFE03F00C5BBD9 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EFF2AEFE03F00C5BBD9 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		BECD2EF52AEFC89B00C5BBD9 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		BECD2EF72AEFC98C00C5BBD9 /* WordsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTextField.swift; sourceTree = "<group>"; };
 		BECD2EF92AEFCC4100C5BBD9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		BECD2EFC2AEFDF1D00C5BBD9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		BECD2EFF2AEFE03F00C5BBD9 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				BECD2EE62AEFBB6A00C5BBD9 /* WordsGameApp.swift */,
+				BECD2EFE2AEFE01E00C5BBD9 /* Model */,
 				BECD2EFB2AEFCC4F00C5BBD9 /* Views */,
+				BECD2F012AEFE69C00C5BBD9 /* ViewModel */,
 				BECD2EF42AEFC87D00C5BBD9 /* Components */,
 				BECD2EEA2AEFBB6C00C5BBD9 /* Assets.xcassets */,
 				BECD2EEC2AEFBB6C00C5BBD9 /* Preview Content */,
@@ -90,6 +96,22 @@
 				BECD2EF92AEFCC4100C5BBD9 /* GameView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BECD2EFE2AEFE01E00C5BBD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BECD2EFC2AEFDF1D00C5BBD9 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BECD2F012AEFE69C00C5BBD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BECD2EFF2AEFE03F00C5BBD9 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +188,9 @@
 				BECD2EF62AEFC89B00C5BBD9 /* TitleText.swift in Sources */,
 				BECD2EE72AEFBB6A00C5BBD9 /* WordsGameApp.swift in Sources */,
 				BECD2EF82AEFC98C00C5BBD9 /* WordsTextField.swift in Sources */,
+				BECD2EFD2AEFDF1D00C5BBD9 /* Player.swift in Sources */,
 				BECD2EFA2AEFCC4100C5BBD9 /* GameView.swift in Sources */,
+				BECD2F002AEFE03F00C5BBD9 /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

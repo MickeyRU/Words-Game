@@ -4,6 +4,8 @@ struct GameView: View {
     
     @State private var word = ""
     
+    var viewModel: GameViewModel
+    
     var body: some View {
         
         VStack(spacing: 16) {
@@ -14,7 +16,7 @@ struct GameView: View {
                     Text("Выход")
                         .padding(6)
                         .padding(.horizontal)
-                        .background(Color("Orange"))
+                        .background(Color("CustomColor"))
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                         .padding(6)
                         .foregroundStyle(Color(.white))
@@ -24,17 +26,17 @@ struct GameView: View {
                 Spacer()
             }
             
-            Text("Магнитотерапия")
+            Text(viewModel.word)
                 .font(.custom("AvenirNext-Bold", size: 36))
                 .foregroundStyle(Color(.white))
             
             HStack(spacing: 12) {
                 VStack {
-                    Text("0")
+                    Text("\(viewModel.playerOne.score)")
                         .font(.custom("AvenirNext-Bold", size: 60))
                         .foregroundStyle(Color(.white))
                     
-                    Text("Вася")
+                    Text("\(viewModel.playerOne.name)")
                         .font(.custom("AvenirNext-Bold", size: 24))
                         .foregroundStyle(Color(.white))
                 }.padding(20)
@@ -48,11 +50,11 @@ struct GameView: View {
                             y: 0)
                 
                 VStack {
-                    Text("0")
+                    Text("\(viewModel.playerTwo.score)")
                         .font(.custom("AvenirNext-Bold", size: 60))
                         .foregroundStyle(Color(.white))
                     
-                    Text("Петя")
+                    Text("\(viewModel.playerTwo.name)")
                         .font(.custom("AvenirNext-Bold", size: 24))
                         .foregroundStyle(Color(.white))
                 }.padding(20)
@@ -70,13 +72,16 @@ struct GameView: View {
                 .padding(.horizontal)
             
             Button {
-                self.word = ""
+                let score = viewModel.check(word: word)
+                if score > 0 {
+                    self.word = ""
+                }
             } label: {
                 Text("Готово!")
                     .padding(12)
                     .foregroundStyle(Color(.white))
                     .frame(maxWidth: .infinity)
-                    .background(Color("Orange"))
+                    .background(Color("CustomColor"))
                     .clipShape(RoundedRectangle(cornerRadius: 26))
                     .font(.custom("AvenirNext-Bold", size: 26))
                     .padding(.horizontal)
@@ -94,5 +99,5 @@ struct GameView: View {
 }
 
 #Preview {
-    GameView()
+    GameView(viewModel: GameViewModel(playerOne: Player(name: "Вася"), playerTwo: Player(name: "Федя"), word: "Рекогнасцировка"))
 }
