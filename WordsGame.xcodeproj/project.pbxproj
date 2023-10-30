@@ -16,6 +16,7 @@
 		BECD2EFA2AEFCC4100C5BBD9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EF92AEFCC4100C5BBD9 /* GameView.swift */; };
 		BECD2EFD2AEFDF1D00C5BBD9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EFC2AEFDF1D00C5BBD9 /* Player.swift */; };
 		BECD2F002AEFE03F00C5BBD9 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2EFF2AEFE03F00C5BBD9 /* GameViewModel.swift */; };
+		BECD2F032AF016E000C5BBD9 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD2F022AF016E000C5BBD9 /* WordCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BECD2EF92AEFCC4100C5BBD9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		BECD2EFC2AEFDF1D00C5BBD9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		BECD2EFF2AEFE03F00C5BBD9 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		BECD2F022AF016E000C5BBD9 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				BECD2EF52AEFC89B00C5BBD9 /* TitleText.swift */,
 				BECD2EF72AEFC98C00C5BBD9 /* WordsTextField.swift */,
+				BECD2F022AF016E000C5BBD9 /* WordCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				BECD2EE72AEFBB6A00C5BBD9 /* WordsGameApp.swift in Sources */,
 				BECD2EF82AEFC98C00C5BBD9 /* WordsTextField.swift in Sources */,
 				BECD2EFD2AEFDF1D00C5BBD9 /* Player.swift in Sources */,
+				BECD2F032AF016E000C5BBD9 /* WordCell.swift in Sources */,
 				BECD2EFA2AEFCC4100C5BBD9 /* GameView.swift in Sources */,
 				BECD2F002AEFE03F00C5BBD9 /* GameViewModel.swift in Sources */,
 			);
