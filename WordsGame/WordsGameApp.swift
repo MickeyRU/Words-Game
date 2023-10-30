@@ -1,5 +1,7 @@
 import SwiftUI
 
+let screen = UIScreen.main.bounds
+
 @main
 struct WordsGameApp: App {
     
